@@ -1,0 +1,11 @@
+[workspace]
+members = [
+    "gooey-egui",
+    "gooey-druid",
+    "gooey-fui",
+    "gooey-iced",
+    "gooey-orbtk",
+    "gooey-relm4"
+]
+
+edition = "2021"
