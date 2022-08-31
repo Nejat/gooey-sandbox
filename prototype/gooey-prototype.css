@@ -1,0 +1,203 @@
+body {
+    margin: 0;
+    overflow: clip;
+}
+
+.container {
+    display: table;
+    height: 100vh;
+    width: 100%;
+}
+
+.container > div {
+    display: table-cell;
+}
+
+.quick-bar {
+    width: 21mm;
+    box-shadow: 1mm 0mm 3mm #C0C0C0;
+}
+
+.icons {
+    display: flex;
+    flex-direction: column;
+    user-select: none;
+    padding: 3.5mm;
+    width: 0;
+    height: 100%;
+}
+
+.icons > .splitter {
+    margin: 0 0 3.5mm 0;
+    width: 14mm;
+    height: .05em;
+    background: #6495EDFF;
+}
+
+.icons > .spacer {
+    display: block;
+    flex: 1 1 auto;
+}
+
+.icons > .icon {
+    flex: 0 1 auto;
+    background: transparent;
+    margin: 0 0 3.5mm 0;
+    border-width: 0;
+}
+
+.icons > .icon > input {
+    display: none;
+    height: 0;
+    width: 0;
+    margin: 0;
+}
+
+.icons > .icon > label {
+    border-radius: 100%;
+    padding: 4mm;
+    width: 6mm;
+    height: 6mm;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.icons > .icon:last-child > label {
+    margin-bottom: 3.5mm;
+}
+
+.icons > .icon:hover > label {
+    background: #2b74b120;
+}
+
+.icons > .icon:active > label {
+    background: #2b74b138;
+}
+
+.icons > .icon > label > i {
+    font-size: 6mm;
+    color: #6495ED;
+    cursor: pointer;
+}
+
+.icons > .icon > input:disabled + label {
+    background: transparent;
+    cursor: default;
+}
+
+.icons > .icon > input:disabled + label > i {
+    cursor: default ;
+}
+
+.icons > .icon:hover > input:disabled + label {
+    background: transparent;
+}
+
+.icons > .icon:active > input:disabled + label {
+    background: transparent;
+}
+
+.icons > .icon > input:disabled + label > i {
+    color: #D3D3D3;
+}
+
+.icons > .icon > input:checked + label {
+    background: #2b74b130;
+}
+
+.drawing-area {
+    background: #F8F8F8;
+    box-shadow: inset 1mm 1mm 4mm #C0C0C0;
+}
+
+.tools-bar {
+    width: 21mm;
+}
+
+.tools {
+    display: flex;
+    flex-direction: column;
+    user-select: none;
+    padding: 3.5mm;
+    width: 0;
+}
+
+.tools > .splitter {
+    margin: 0 0 3.5mm 0;
+    width: 14mm;
+    height: .05em;
+    background: #6495EDFF;
+}
+
+.tools > .spacer {
+    background: red;
+    height: 20mm;
+}
+
+.tools > div {
+    background: transparent;
+    margin: 0 0 3.5mm 0;
+    border-width: 0;
+}
+
+.tools > div > input {
+    display: none;
+    height: 0;
+    width: 0;
+    margin: 0;
+}
+
+.tools > div > label {
+    border: #6495ED solid thin;
+    border-radius: 100%;
+    padding: 4mm;
+    width: 6mm;
+    height: 6mm;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.tools > div:last-child > label {
+    margin-bottom: 0;
+}
+
+.tools > div:hover > label {
+    background: #2b74b120;
+}
+
+.tools > div:active > label {
+    background: #2b74b138;
+}
+
+.tools > div > label > i {
+    font-size: 6mm;
+    color: #6495ED;
+    cursor: pointer;
+}
+
+.tools > div > input:disabled + label {
+    background: transparent;
+    cursor: default;
+}
+
+.tools > div > input:disabled + label > i {
+    cursor: default ;
+}
+
+.tools > div:hover > input:disabled + label {
+    background: transparent;
+}
+
+.tools > div:active > input:disabled + label {
+    background: transparent;
+}
+
+.tools > div > input:disabled + label > i {
+    color: #D3D3D3;
+}
+
+.tools > div > input:checked + label {
+    background: #2b74b130;
+}
